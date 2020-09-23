@@ -493,7 +493,7 @@ button:focus {
     color: #000;
   }
   .Skills {
-    word-wrap: normal;
+    text-overflow: ellipsis;
   }
 }
 .nav-active {
