@@ -492,6 +492,9 @@ button:focus {
     z-index: 5;
     color: #000;
   }
+  .Skills {
+    word-wrap: normal;
+  }
 }
 .nav-active {
   transform: translateX(0%);
