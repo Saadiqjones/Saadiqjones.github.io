@@ -464,7 +464,7 @@ button:focus {
     width: 60%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
