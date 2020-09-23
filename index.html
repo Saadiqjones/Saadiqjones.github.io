@@ -2,9 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Saadiq Jones - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Hello, I'm Saadiq Jones, A Full Stack Developer"
+    />
+    <meta
+      name="keywords"
+      content="FrontEnd, BackEnd, Developer,HTML5, CSS3, Java, JavaScript, Dev, web dev, PostgreSQL, MySQL, saj83, Saadiq jones"
+    />
+    <meta name="author" content="Saadiq Jones" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
@@ -21,6 +32,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+
+    <title>Saadiq Jones - Full Stack Developer</title>
   </head>
   <body>
     <div id="loading">
@@ -35,23 +48,37 @@
       class="animated slideInDown"
       style="animation-delay: 1.8s"
     >
-      <table>
-        <tr>
-          <td id="logo">Welcome!</td>
-          <td id="navigation">
-            <a href="#work">Work</a>
-            <a href="#Skills">Skills</a>
-            <a href="./Updated Resume Template (1).pdf">Resume</a>
-            <a href="#contact">Contact</a>
-          </td>
-        </tr>
-      </table>
+      <nav class="nav">
+        <div class="logo">Welcome!</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#Skills">skills</a>
+          </li>
+          <li>
+            <a href="#work">works</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+          <li>
+            <a href="./New Updated Resume (3).pdf">resume</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
     <table id="top_part">
       <tr>
         <td id="about" class="animated slideInLeft" style="animation-delay: 2s">
           <h1>I'm Saadiq Jones, a Full Stack Software Developer.</h1>
-          <button class="btn_one" href="mailto:saj83@pitt.edu">Hire Me</button><br />
+          <form>
+            <a id="btn_one" href="#contact"> Hire Me </a>
+          </form>
+          <br />
           <table>
             <tr>
               <td class="animated zoomIn" style="animation-delay: 2.2s">
@@ -65,7 +92,9 @@
                 ></a>
               </td>
               <td class="animated zoomIn" style="animation-delay: 2.6s">
-                <a class="social" href="https://stackoverflow.com/users/14179739/sjones"
+                <a
+                  class="social"
+                  href="https://stackoverflow.com/users/14179739/sjones"
                   ><i class="fab fa-stack-overflow"></i
                 ></a>
               </td>
@@ -111,76 +140,60 @@
           onclick="magnify($(this).attr('src'))"
           src="./webfactory-unsplash.jpg"
         />
-        <img
-          onclick="magnify($(this).attr('src'))"
-          src="./webfactory-unsplash.jpg"
-        />
       </div>
     </div>
     <div id="Skills">
       <h1>Skills.</h1>
-      <h3 class="heading-tertiary u-margin-bottom-small">
-        Programming Languages
-      </h3>
-      <table>
-        <tbody>
-            <tr>
-              <td class="skills_skill">HTML5,</td>
-              <td class="skills__skill">CSS3,</td>
-              <td class="skills__skill">Java,</td>
-              <td class="skills__skill">JavaScript ES6,</td>
-              <td class="skills__skill">Python,</td>
-              <td class="skills__skill">C,</td>
-              <td class="skills_skill">C++,</td>
-              <td class="skills__skill">C#,</td>
-              <td class="skills__skill">Visual Basic,</td>
-              <td class="skills__skill">MIPS Assembly,</td>
-              <td class="skills__skill">R</td>
-            </tr>
-          </p>
-        </tbody>
-      </table>
-      <h3 class="heading-tertiary u-margin-bottom-small">
-        Frameworks/Libraries
-      </h3>
+      <h3>Programming Languages</h3>
       <table>
         <tbody>
           <tr>
-            <td class="skills__skill">NodeJS,</td>
-            <td class="skills__skill">ReactJS,</td>
-            <td class="skills__skill">ExpressJS,</td>
-            <td class="skills__skill">Flask,</td>
-            <td class="skills__skill">Django,</td>
-            <td class="skills__skill">ASP.NET MVC 5,</td>
-            <td class="skills__skill">React Native,</td>
-            <td class="skills__skill">Tensorflow,</td>
-            <td class="skills__skill">Keras</td>
+            <td>HTML5,</td>
+            <td>CSS3,</td>
+            <td>Java,</td>
+            <td>JavaScript,</td>
+            <td>Python,</td>
+            <td>C,</td>
+            <td>C++,</td>
+            <td>C#</td>
           </tr>
         </tbody>
       </table>
-      <h3 class="heading-tertiary u-margin-bottom-small">Databases</h3>
+      <h3>Frameworks/Libraries</h3>
       <table>
         <tbody>
           <tr>
-            <td class="skills__skill">MongoDB & Mongoose,</td>
-            <td class="skills__skill">MySQL,</td>
-            <td class="skills__skill">PostgreSQL,</td>
-            <td class="skills__skill">Firebase</td>
+            <td>Node,</td>
+            <td>React,</td>
+            <td>Express,</td>
+            <td>Flask,</td>
+            <td>Django,</td>
+            <td>ASP.NET,</td>
+            <td>React Native</td>
           </tr>
         </tbody>
       </table>
-      <h3 class="heading-tertiary u-margin-bottom-small">Tools</h3>
+      <h3>Databases</h3>
       <table>
         <tbody>
           <tr>
-            <td class="skills__skill">Git,</td>
-            <td class="skills__skill">GitHub,</td>
-            <td class="skills__skill">Docker,</td>
-            <td class="skills__skill">OpenCV,</td>
-            <td class="skills__skill">Ubuntu,</td>
-            <td class="skills__skill">GIS,</td>
-            <td class="skills__skill">VIM,</td>
-            <td class="skills__skill">ROS</td>
+            <td>MongoDB,</td>
+            <td>SQLite,</td>
+            <td>SQL Server,</td>
+            <td>Firebase</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Tools</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>Git,</td>
+            <td>GitHub,</td>
+            <td>Docker,</td>
+            <td>OpenCV,</td>
+            <td>Ubuntu,</td>
+            <td>ROS</td>
           </tr>
         </tbody>
       </table>
@@ -193,7 +206,7 @@
             <div id="inner_div">
               <table id="inner_table">
                 <tr>
-                  <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                  <td><i class="fas fa-phone"></i> &nbsp; 267-456-3100</td>
                 </tr>
                 <tr>
                   <td><i class="fas fa-at"></i> &nbsp; saj83@pitt.edu</td>
@@ -219,22 +232,15 @@
                     <a class="social" href="https://www.hackerrank.com/saj83"
                       ><i class="fab fa-hackerrank"></i
                     ></a>
-                    <a class="social" href="https://stackoverflow.com/users/14179739/sjones"
+                    <a
+                      class="social"
+                      href="https://stackoverflow.com/users/14179739/sjones"
                       ><i class="fab fa-stack-overflow"></i
                     ></a>
                   </td>
                 </tr>
               </table>
             </div>
-          </td>
-          <td>
-            <form>
-              <input type="text" placeholder="name" required />
-              <input type="email" placeholder="email" required /><br />
-              <textarea placeholder="your message" required rows="5"></textarea
-              ><br />
-              <button class="btn_one" href="mailto:saj83@pitt.edu">send</button>
-            </form>
           </td>
         </tr>
       </table>
