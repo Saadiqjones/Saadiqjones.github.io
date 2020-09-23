@@ -461,7 +461,7 @@ button:focus {
     z-index: 5;
     color: #000;
   }
-  #Skills {
+  #Skills table tbody tr td {
     text-overflow: ellipsis;
   }
 }
